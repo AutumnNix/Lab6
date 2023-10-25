@@ -1,5 +1,4 @@
 # Autumn Nix's encode file
-
 def encode(password):
     split_password = []
     split_password.extend(password)
@@ -19,18 +18,23 @@ def encode(password):
         new_password += element
     return new_password
 
+# print menu options
 print("Menu")
 print("-------------")
 print("1. Encode")
 print("2. Decode")
 print("3. Quit")
 print()
+# prompt for menu input
 option = int(input("Please enter an option: "))
 if option == 1:
+    # ask for password to encode
     password = str(input("Please enter your password to encode: "))
     encode(password)
     print("Your password has been encoded and stored!")
 elif option == 2:
+    # decode encoded password
     pass
 elif option == 3:
+    # quit
     pass
